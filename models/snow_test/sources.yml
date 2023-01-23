@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: snowflake
+    schema: SNOWFLAKE_SAMPLE_DATA.weather
+    tables:
+      - name: SNOWFLAKE_SAMPLE_DATA.weather
+ 

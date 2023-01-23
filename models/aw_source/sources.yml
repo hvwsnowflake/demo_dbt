@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: adventureworks
+    schema: STG
+    tables:
+      - name: dim_currency
+      - name: dim_geography
+      - name: fact_internetsales
