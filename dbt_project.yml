@@ -4,6 +4,7 @@
 # name or the intended use of these models
 name: 'demo_dbt'
 version: '1.0.0'
+require-dbt-version: ">=1.3.2"
 config-version: 2
 
 # This setting configures which "profile" dbt uses for this project.
@@ -53,7 +54,7 @@ models:
           # This configuration builds every model in the staging directory into a schema named staging_<target_schema>
           # learn more about custom schemas: https://docs.getdbt.com/docs/building-a-dbt-project/building-models/using-custom-schemas
      #     query_tag: dbt_staging
-          # This applies a query tag named `dbt_staging` to any related queries in Snowflake's Query_History
+          # This applies a query tag named `dbt_stagingd` to any related queries in Snowflake's Query_History
           # learn more about query tags: https://docs.getdbt.com/reference/resource-configs/snowflake-configs#query-tags
      #     snowflake_warehouse: compute_wh
           # This specifies which Snowflake warehouse should be used to execute models in staging by overriding the default warehouse defined in the connection.
